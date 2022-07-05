@@ -13,11 +13,6 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
 
-/**
- * 跨域问题
- * @author EdwardXu
- */
-
 @Configuration
 public class GlobalCorsConfig {
 
@@ -27,7 +22,6 @@ public class GlobalCorsConfig {
         org.springframework.web.cors.CorsConfiguration config = new org.springframework.web.cors.CorsConfiguration();
         config.setAllowCredentials(true);
         config.addAllowedOrigin("http://localhost:9528");
-
 
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
